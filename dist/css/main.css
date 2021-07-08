@@ -310,7 +310,9 @@ canvas {
   grid-gap: 1.2rem; }
 
 #about-a .bio-image {
-  grid-area: bioimage; }
+  grid-area: bioimage;
+  border-radius: 50%;
+  width: 80%; }
 
 #about-a .bio {
   grid-area: bio;
