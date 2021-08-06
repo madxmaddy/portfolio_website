@@ -37,7 +37,8 @@ img {
 // Logo
 #logo {
   width: 70px;
-  height: 70px;
+  height: 35px;
+  margin-top: 16px;
   color: #fff;
   text-transform: uppercase;
 }
@@ -236,6 +237,8 @@ canvas {
       grid-area: bio;
       border-left: 3px solid $main-color;
       padding: 0.8rem;
+      height: fit-content;
+      align-self: center;
     }
 
     .award-1 {
@@ -291,6 +294,13 @@ canvas {
 // Contact Page
 #contact {
   &-a {
+    .contact-info {
+      display: flex;
+      color: $dark-color;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    // Form submission when added
     .text-fields {
       display: grid;
       grid-template-areas:
@@ -331,6 +341,10 @@ canvas {
     .contact-info {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
+
+      a {
+        color: $light-color;
+      }
     }
   }
 }
@@ -348,6 +362,7 @@ canvas {
     .social .fab {
       margin-right: 1rem;
       border: 2px #fff solid;
+      color: #fff;
       border-radius: 50%;
       height: 20px;
       width: 20px;

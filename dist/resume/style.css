@@ -1,0 +1,172 @@
+:root {
+  --primary-color: #160571;
+  --secondary-color: #e7e6f0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  padding: 20px;
+}
+
+/* Utility class */
+.my-5 {
+  margin: 5px 0;
+}
+
+.py-5 {
+  padding: 5px;
+}
+.text-primary {
+  color: var(--primary-color);
+}
+
+.bg-primary {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.bg-secondary {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.small-text {
+  font-size: 10px;
+  font-style: italic;
+  color: #333;
+}
+
+.section-title {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.dark-line {
+  border: 1px solid var(--primary-color);
+  margin: 10px 0;
+}
+
+.bullet-point {
+  width: 3px;
+  height: 3px;
+  border: 3px solid var(--primary-color);
+  border-radius: 50%;
+}
+
+/* .resume-header */
+.resume-header {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.resume-header .contact-information {
+  margin: 10px auto;
+  padding: 7px;
+  height: fit-content;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: 1px solid var(--primary-color);
+}
+
+.contact-information p {
+  margin: 3px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+/* Summary */
+#summary {
+  margin-top: 10px;
+}
+
+#summary p {
+  text-align: left;
+  margin: 10px 0 4px 0;
+  font-weight: lighter;
+}
+
+/* Career Snapshot */
+
+.career-grid-container {
+  font-size: 13px;
+  display: grid;
+  text-align: center;
+  grid-template-areas:
+    'one two two two two three three three'
+    'eighteen eighteen nineteen nineteen twenty twenty twenty-one twenty-one';
+  margin-bottom: 10px;
+}
+
+.one {
+  grid-area: one;
+}
+.two {
+  grid-area: two;
+}
+.three {
+  grid-area: three;
+}
+.eighteen {
+  grid-area: eighteen;
+}
+.nineteen {
+  grid-area: nineteen;
+}
+.twenty {
+  grid-area: twenty;
+}
+.twenty-one {
+  grid-area: twenty-one;
+}
+
+/* Key Skills Container */
+#key-skills {
+  margin: 0 10px;
+}
+
+.key-skills-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.key-skills-container p {
+  margin: 0 15px;
+  font-weight: 700;
+  color: #333;
+}
+
+/* Professional Experience */
+.job-title {
+  padding: 3px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.job-date {
+  color: #333;
+  font-style: italic;
+}
+
+ul {
+  margin: 10px 20px;
+  font-size: 12px;
+  color: #333;
+  line-height: 1.6;
+}

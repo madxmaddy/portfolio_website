@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en"
+    class="bgpositionshorthand bgpositionxy bgrepeatround bgrepeatspace bgsizecover borderradius cssanimations csscalc csstransforms supports csstransforms3d preserve3d csstransitions no-flexboxtweener fontface svg svgasimg svgclippaths svgfilters svgforeignobject inlinesvg smil localstorage sessionstorage websqldatabase multiplebgs"
+    style='--branding-primary:#1e5194; --sidebar-bg-color:#3c5a81;'>
+
+</html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Inferno Snippet Mockup Template</title>
+    <!-- Import Roboto -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic|Roboto+Mono:400,500|Material+Icons"
+        rel="stylesheet">
+    <!-- Import Inferno's Styles -->
+    <link rel="stylesheet"
+        href="https://studio304nextechar.freetls.fastly.net/infernoAR/_templates/css/inferno-base-styles.css">
+    <link rel="stylesheet"
+        href="https://studio304nextechar.freetls.fastly.net/infernoAR/_templates/css/inferno-extra-styles.css">
+    <!-- Import JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <!-- Liquid Templating -->
+    <script src="https://cdn.jsdelivr.net/npm/liquidjs/dist/liquid.min.js"></script>
+    <script>
+        let landingPageEl = null;
+    </script>
+</head>
+
+<body>
+
+    <app-root class='layout-fixed has-menu'>
+        <videos-layout>
+            <div class="wrapper" layout="column">
+                <app-header class="topnavbar-wrapper">
+                    <mat-toolbar
+                        class="mat-elevation-z3 navbar topnavbar mat-toolbar mat-primary mat-toolbar-single-row ng-star-inserted"
+                        color="primary">
+                        <div class="navbar-header"></div>
+                        <div class="ellipsis ng-star-inserted" flex="" layout="row" layout-align="start center">
+                            <button class="menu-btn mat-icon-button ng-star-inserted" hide="" mat-icon-button=""
+                                show-gt-sm="" trigger-resize="" onclick="mtTriggerMenu()"><span
+                                    class="mat-button-wrapper">
+                                    <mat-icon class="mat-icon material-icons mat-icon-no-color" role="img"
+                                        aria-hidden="true">menu
+                                    </mat-icon>
+                                </span>
+                            </button>
+                        </div>
+                    </mat-toolbar>
+                </app-header>
+                <!-- SIDEBAR -->
+                <videos-sidebar class="aside">
+                    <div class="aside-inner">
+                        <nav class="sidebar" sidebar-anyclick-close=""></nav>
+                    </div>
+                </videos-sidebar>
+                <!-- ./ SIDEBAR -->
+                <!-- LANDING -->
+                <section class="IE-FlexAuto" flex="" style='border: 2px none red;'>
+                    <div class="content-wrapper">
+                        <landing-page class="ng-star-inserted">
+                            <div mutationobserver="" id="landing">
+                                <!-- CREATE SHADOW DOM AND ATTACH STYLES -->
+                                <script>
+                                    landingPageEl = document.querySelector('landing-page').attachShadow({ mode: 'open' });
+                                    const landing = landingPageEl.appendChild(document.getElementById('landing'));
+                                    landingPageEl.appendChild(landing);
+                                    var loginPageEl = landingPageEl;
+                                </script>
+                                <style type="text/css">
+                                    @import url("https://studio304nextechar.freetls.fastly.net/infernoAR/_templates/css/inferno-shadow-styles.css");
+                                </style>
+                                <inferno-snippet-content>
+
+                                    <!-- ********************* -->
+                                    <!-- ********************* -->
+                                    <!-- ********************* -->
+                                    <!-- SNIPPET CONTENT START -->
+                                    <script>
+                                        var landingPageContent = {
+                                            experimentTitle: "Experiment 3",
+                                            experimentStep: "Step 4:",
+                                            experimentSubtitle: "Zoom session",
+                                            experimentType: "Zoom",
+                                            experimentIcon: "https://studio304nextechar.freetls.fastly.net/infernoAR/006-ryerson/assets/experiment-icons/live-lab-icon.png",
+                                            date: "Date",
+                                            time: "Time",
+                                            description: `The live lab is conducted through Zoom. You can enter the zoom room once the count down has completed.
+                             Join the zoom room by clicking the <b>Launch Zoom</b> button once it becomes active and proceed to watch the
+                             Live Lab.`,
+                                            zoomGroups: [
+                                                {
+                                                    groupName: "Zoom Group A",
+                                                    zoomLink: "https://www.google.com"
+                                                },
+                                                {
+                                                    groupName: "BLG888",
+                                                    zoomLink: "https://wikipedia.com"
+                                                },
+                                                {
+                                                    groupName: "Zoom Group C",
+                                                    zoomLink: "https://bing.com"
+                                                }
+                                            ],
+                                            //backLink: "",
+                                            //nextLink: "",
+                                        }
+                                    </script>
+
+                                    <!-- https://studio304nextechar.freetls.fastly.net/infernoAR/gallery2/
+      left pane 280
+      top pane 55
+      main pane has 15-20 padding forced on it. -->
+                                    <style>
+                                        #ntar-bg {
+                                            position: absolute;
+                                            width: 100%;
+                                            height: calc(100vh - 56px);
+                                            margin: -20px;
+                                            background-image: url(https://studio304nextechar.freetls.fastly.net/infernoAR/006-ryerson/assets/experiment-background.png);
+                                            background-repeat: no-repeat;
+                                            background-position: bottom right;
+                                            background-size: 130rem;
+                                            background-color: #f6f6f6;
+                                            background-attachment: fixed;
+                                            overflow-y: auto;
+                                        }
+
+                                        .main {
+                                            display: flex;
+                                            display: -webkit-box;
+                                            display: -moz-box;
+                                            display: -ms-flexbox;
+                                            display: -ms-flexbox;
+                                            flex-direction: column;
+                                            -webkit-box-orient: vertical;
+                                            -ms-flex-direction: column;
+                                            flex-direction: column;
+                                            height: 100%;
+                                            margin: 1rem 3rem;
+                                        }
+
+                                        .top {
+                                            display: flex;
+                                            flex-direction: row;
+                                            justify-content: space-between;
+                                        }
+
+                                        .box {
+                                            color: #01245B;
+                                            box-shadow: 6px 7px 15px 0 rgba(49, 49, 49, 0.5);
+                                            margin: 3rem 2rem;
+                                            padding: 2rem 2.5rem;
+                                            width: 90vw;
+                                            min-width: 35rem;
+                                            background-color: #FFFFFF;
+                                            z-index: 2;
+                                        }
+
+                                        .box h1 {
+                                            font-size: 3.8rem;
+                                            font-weight: bold;
+                                            margin: 0.5rem;
+                                        }
+
+                                        .box h2 {
+                                            font-size: 2.2rem;
+                                            font-weight: bold;
+                                            margin: 0.5rem;
+                                        }
+
+                                        .box h3 {
+                                            font-size: 2rem;
+                                            font-weight: bold;
+                                            margin-top: 0;
+                                        }
+
+                                        .box h4 {
+                                            font-size: 2.2rem;
+                                            font-weight: normal;
+                                            margin: 1rem;
+                                        }
+
+                                        .box p {
+                                            font-size: 1.8rem;
+                                            line-height: 3rem;
+                                            color: #1D1D1D;
+                                        }
+
+
+                                        .title-row {
+                                            display: flex;
+                                            justify-content: flex-start;
+                                        }
+
+
+                                        .title-row img {
+                                            width: 8rem;
+                                            height: 8rem;
+                                        }
+
+                                        .title-row-text {
+                                            margin: 0 0.5rem;
+                                            display: flex;
+                                            align-items: baseline;
+                                        }
+
+                                        .title-row-text h1 {
+                                            margin: 2rem;
+                                        }
+
+                                        .title-row-text h4 {
+                                            margin: 0;
+                                            font-size: 2.5rem;
+                                            font-weight: normal;
+                                        }
+
+                                        #experiment-type {
+                                            color: #055A9C;
+                                        }
+
+                                        #description {
+                                            margin: 1.75rem 0;
+                                        }
+
+                                        .date-time {
+                                            margin-top: 2rem;
+                                        }
+
+                                        .bottom-nav {
+                                            display: flex;
+                                            justify-content: space-between;
+                                            margin: 4rem 2rem;
+                                        }
+
+                                        .bottom-nav-button {
+                                            background-color: #01245B;
+                                            border: none;
+                                            box-shadow: 6px 7px 12px 0 rgba(139, 139, 139, 0.51);
+                                            padding: 15px 20px;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            text-decoration: none;
+                                            width: 25%;
+                                            min-width: 17rem;
+                                        }
+
+                                        .bottom-nav-button:hover {
+                                            cursor: pointer;
+                                            text-decoration: none;
+                                            background-color: #055A9C;
+                                        }
+
+                                        .bottom-nav-button img {
+                                            width: 2.5rem;
+                                        }
+
+                                        .arrow-left {
+                                            margin-right: 2rem;
+                                        }
+
+                                        .arrow-right {
+                                            margin-left: 2rem;
+                                        }
+
+                                        .bottom-nav-button span {
+                                            color: white;
+                                            font-size: 20px;
+                                            font-weight: bold;
+                                            letter-spacing: 0;
+                                            line-height: 23px;
+                                            text-align: center;
+                                        }
+
+                                        .banner-row {
+                                            display: flex;
+                                            flex-wrap: wrap;
+                                            justify-content: center;
+                                            background: url(https://studio304nextechar.freetls.fastly.net/infernoAR/006-ryerson/assets/zoom-pattern.png) no-repeat center center fixed;
+                                            -webkit-background-size: cover;
+                                            -moz-background-size: cover;
+                                            -o-background-size: cover;
+                                            background-size: cover;
+                                            padding: 4rem 2rem;
+                                            margin: 2rem;
+                                        }
+
+                                        .info-box {
+                                            background-color: white;
+                                            margin: 1rem;
+                                            padding: 3rem;
+                                            display: flex;
+                                            flex-direction: column;
+                                            min-width: 20rem;
+                                        }
+
+                                        .lab-info {}
+
+                                        .zoom-info {
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            text-align: center;
+                                        }
+
+                                        .select-button {
+                                            background-color: #FFDC00;
+                                            border: none;
+                                            box-shadow: 6px 7px 12px 0 rgba(139, 139, 139, 0.51);
+                                            padding: 15px 20px;
+                                            margin: 4.5rem 0;
+                                            width: 20vw;
+                                            min-width: 18rem;
+                                            display: flex;
+                                            justify-content: center;
+                                            text-decoration: none;
+                                        }
+
+                                        .select-button:hover {
+                                            cursor: pointer;
+                                            text-decoration: none;
+                                            background-color: #FFF3A6;
+                                        }
+
+                                        .select-button span {
+                                            color: #313131;
+                                            font-size: 20px;
+                                            font-weight: bold;
+                                            letter-spacing: 0;
+                                            line-height: 23px;
+                                            text-align: center;
+                                        }
+
+                                        /*error overlay*/
+                                        #error-overlay {
+                                            display: none;
+                                            position:fixed;
+                                            /*display: none;*/
+                                            margin-left: 50%;
+                                            width: 300px;
+                                            height: 200px;
+                                            background: url(https://studio304nextechar.freetls.fastly.net/infernoAR/006-ryerson/assets/zoom-pattern.png);
+                                            z-index:3;
+                                            text-align: center;
+                                            align-items: center;
+                                            justify-content: center;
+                                            
+                                        }
+                                        .error-message {
+                                            display: flex;
+                                            flex-direction:column;
+                                            width:97%;
+                                            height: 97%;
+                                            background-color: white;
+                                            margin: auto;
+                                            align-items: center;
+                                        }
+                                        .close-error-overlay {
+                                            cursor: pointer;
+                                        }
+
+                                    </style>
+                                    <div id="ntar-bg">
+                                        <div class="main">
+                                            <div id="error-overlay">
+                                                <div class="error-message">
+                                                    <h2>Oops! It looks like you aren't assigned to a zoom group yet. Please contact.. someone</h2>
+                                                    <p class="close-error-overlay" onClick= "toggleZoomLinkErrorOverlay()">Close</p>
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="top">
+                                                <div class="box">
+                                                    <div id="title-row" class="box-row title-row">
+                                                        <img id="experiment-icon" class="experiment-icon" />
+                                                        <div id="title-row-text" class="title-row-text">
+                                                            <h1 id="experiment-title"></h1>
+                                                            <h4 id="experiment-step"></h4>
+                                                            <h4 id="experiment-subtitle">
+                                                            </h4>
+                                                            <h4 id="experiment-type"></h4>
+                                                        </div>
+                                                    </div>
+                                                    <div class="banner-row">
+
+                                                        <div id="info-box" class="info-box lab-info">
+                                                            <h1 id="experiment-subtitle-box"></h1>
+                                                            <div class="date-time">
+                                                                <h2 id="date-full"></h2>
+                                                                <h2 id="time-full"></h2>
+                                                            </div>
+                                                            <p id="description">
+                                                            </p>
+                                                        </div>
+
+                                                        <div class="info-box zoom-info">
+                                                            <h4>Your Zoom Lab</h4>
+                                                            <!--       <h1 id="date-short"></h1>
+          <h1 id="start-time"></h1>
+      -->
+
+                                                            <p id="launch-zoom" onClick="getZoomLink()" class="select-button"><span>Launch
+                                                                    Zoom</span></p>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="bottom-nav">
+                                                <!-- <a id="back-button" class="bottom-nav-button">
+      <img class="arrow-left"
+        src="https://studio304nextechar.freetls.fastly.net/infernoAR/006-ryerson/assets/arrow-left.png">
+      <span>Back</span>
+      </a>
+      <a id="next-button" class="bottom-nav-button">
+      <span>Next Step</span>
+      <img class="arrow-right"
+        src="https://studio304nextechar.freetls.fastly.net/infernoAR/006-ryerson/assets/arrow-right.png">
+      </a>
+      -->
+                                            </div>
+                                        </div>
+
+                                    </div>
+                            </div>
+
+                            <script>
+
+                                var getTimeRangeBreak = time => {
+                                    var smHyphen = time.indexOf("-");
+                                    var mdHyphen = time.indexOf("–");
+                                    var lgHyphen = time.indexOf("—");
+                                    var space = time.indexOf(" ");
+
+                                    if (smHyphen > -1 && smHyphen < mdHyphen && smHyphen < lgHyphen) {
+                                        return smHyphen
+                                    } else if (mdHyphen > -1 && mdHyphen < smHyphen && mdHyphen < lgHyphen) {
+                                        return mdHyphen
+                                    } else if (lgHyphen > -1 && lgHyphen < smHyphen && lgHyphen < mdHyphen) {
+                                        return lgHyphen
+                                    } else if (space !== -1) {
+                                        return space
+                                    } else {
+                                        // or use full string
+                                        return time.length;
+                                    }
+
+                                }
+
+                                var getStartTime = time => {
+                                    var start = time.substr(0, getTimeRangeBreak(time))
+                                    return start
+                                }
+
+                                var buildLongDate = date => {
+                                    var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+                                    var d = new Date(landingPageContent.date).toLocaleString('default', options)
+                                    return d
+                                }
+
+                                var buildShortDate = date => {
+                                    var options = { weekday: 'short', month: 'short', day: 'numeric' };
+                                    var d = new Date(landingPageContent.date).toLocaleString('default', options)
+                                    return d
+                                }
+
+                                var buildLandingPage = () => {
+
+                                    landingPageEl.getElementById("experiment-title").innerHTML = landingPageContent.experimentTitle;
+                                    landingPageEl.getElementById("experiment-step").innerHTML = `${landingPageContent.experimentStep} &nbsp;`;
+                                    landingPageEl.getElementById("experiment-subtitle").innerHTML = `${landingPageContent.experimentSubtitle} &nbsp;`;
+                                    landingPageEl.getElementById("experiment-type").innerHTML = landingPageContent.experimentType;
+                                    landingPageEl.getElementById("experiment-icon").src = landingPageContent.experimentIcon;
+                                    landingPageEl.getElementById("experiment-subtitle-box").innerHTML = `${landingPageContent.experimentSubtitle}:`;
+                                    //landingPageEl.getElementById("date-full").innerHTML = `Date: ${buildLongDate(landingPageContent.date)}`;
+                                    //landingPageEl.getElementById("time-full").innerHTML = `Time: ${landingPageContent.time}`;
+                                    landingPageEl.getElementById("description").innerHTML = landingPageContent.description;
+                                    //landingPageEl.getElementById("date-short").innerHTML = `${buildShortDate(landingPageContent.date)}`;
+                                    // landingPageEl.getElementById("start-time").innerHTML = `${getStartTime(landingPageContent.time)}`;
+                                    //landingPageEl.getElementById("back-button").href = landingPageContent.backLink;
+                                    //landingPageEl.getElementById("next-button").href = landingPageContent.nextLink;
+
+                                }
+
+
+                                var userId = window.sessionStorage.getItem('userId');
+                                //Here, we make an array of the zoom groups provided by the course instructor 
+                                //The logic was for readability/debugging. Is it unnecessary?
+                                var zoomGroupsArray = [];
+                                var myZoomGroups = landingPageContent.zoomGroups;
+                                myZoomGroups.forEach((zoomGroup, index) => {
+                                    zoomGroupsArray.push(zoomGroup.groupName);
+                                });
+                                console.log("zoomGroupsArray: " + zoomGroupsArray);
+
+                                
+
+                                function fetchUserGroups() {
+                                    var defer = $.Deferred();
+                                    //console.log(userId);
+                                    var _headers = {
+                                        "Authorization": "Bearer " + window.sessionStorage.token,
+                                        "X-InfernoCore-Domain": "ryerson.infernoar.com",
+                                        'Accept': 'application/json',
+                                        'Content-Type': 'application/json'
+                                    };
+                                    if (window.sessionStorage.overrideId) {
+                                        _headers["X-Client-Override"] = window.sessionStorage.overrideId;
+                                        _headers['X-InfernoCore-Domain'] = 'jolokia.inferno.jolokia.com';
+                                    }
+                                    $.ajax({
+                                        url: "https://ingress.infernocore.jolokia.com/api/GroupUsers/" + userId,
+                                        type: "GET",
+                                        headers: _headers,
+                                        success: function (result) {
+                                            defer.resolve(result);
+                                        },
+                                        error: function (error) {
+                                            console.log("error!", error);
+                                        }
+                                    });
+                                    return defer;
+                                }
+
+                                //This pushes only the names of the users' groups to an easy to read and compare array
+                                var userGroupsArray = [];
+                                $(document).ready(function () {
+                                    fetchUserGroups().then(function (userGroups) {
+                                        $.each(userGroups, function (key, nextGroup) {
+                                            userGroupsArray.push(nextGroup.name);
+                                        });
+                                        console.log("userGroupsArray: " + userGroupsArray);
+                                        getZoomLink();
+                                    });
+                                });
+
+                                /*This function compares the user's assigned groups in inferno
+                                to the zoom groups for the class. It returns a function setZoomLink(index)
+                                that will set the href to the matching zoom link */  
+                                function getZoomLink() {
+                                    //Case: No zoom groups
+                                    if(zoomGroupsArray.length === 0)
+                                    {
+                                        console.log("No zoom groups provided");
+                                        return;
+                                    }
+                                    for (i = 0; i < userGroupsArray.length; i++) {
+                                        for (j = 0; j < zoomGroupsArray.length; j++) {
+                                            if (userGroupsArray[i] === zoomGroupsArray[j]) {
+                                                console.log("User and Zoom Group Match: " + zoomGroupsArray[j])
+                                                return setZoomLink(j);
+                                            }
+                                        }
+                                    }
+                                    console.log("User not assigned to zoom group"); 
+                                    //Communicate error to user
+                                    toggleZoomLinkErrorOverlay();
+                                    return;
+                                                                             
+                                }
+
+                                function setZoomLink(index) {
+                                    //landingPageEl.getElementById("launch-zoom").href = myZoomGroups[index].zoomLink;
+                                    landingPageEl.getElementById("launch-zoom").onClick = window.open(myZoomGroups[index].zoomLink);
+                                    
+                                }
+
+                                function toggleZoomLinkErrorOverlay () {
+                                    console.log("zoom link overlay");
+                                    if(landingPageEl.getElementById("error-overlay").style.display == "none"){
+                                        landingPageEl.getElementById("error-overlay").style.display ="flex";
+                                    }
+                                    else {
+                                        landingPageEl.getElementById("error-overlay").style.display ="none";
+                                    }
+                                }
+
+                                buildLandingPage();
+
+                            </script>
+
+                            <script>
+
+                                var contentSection = landingPageEl.getElementById("ntar-bg")
+
+                                var resizeObserver = new ResizeObserver(entries => {
+                                    for (const entry of entries) {
+                                        var contentWidth = contentSection.offsetWidth;
+
+                                        var titleRow = landingPageEl.getElementById("title-row");
+
+                                        if (contentWidth <= 1250) {
+                                            titleRow.style.flexDirection = "column";
+                                            titleRow.style.justifyContent = "center";
+                                            titleRow.style.alignItems = "center";
+
+                                        } else {
+                                            titleRow.style.flexDirection = "";
+                                            titleRow.style.justifyContent = "";
+                                            titleRow.style.alignItems = "";
+                                        }
+
+                                        var titleRowText = landingPageEl.getElementById("title-row-text");
+
+                                        if (contentWidth <= 1040) {
+
+                                            titleRowText.style.flexDirection = "column";
+                                        } else {
+
+                                            titleRowText.style.flexDirection = "";
+                                        }
+
+                                        var infoBox = landingPageEl.getElementById("info-box");
+
+                                        if (contentWidth >= 1209) {
+                                            infoBox.style.maxWidth = "50%";
+                                        } else {
+                                            infoBox.style.maxWidth = "";
+                                        }
+
+                                    }
+                                });
+
+                                resizeObserver.observe(contentSection);
+                            </script>
+
+                            <!-- ******************* -->
+                            <!-- ******************* -->
+                            <!-- ******************* -->
+
+                            </inferno-snippet-content>
+
+                    </div>
+                    </landing-page>
+            </div>
+            </section>
+            <!-- LANDING -->
+            <!-- FOOTER -->
+            <footer app-footer="" layout="row" layout-align="start center">
+
+            </footer>
+            <!-- ./ FOOTER -->
+            </div>
+        </videos-layout>
+    </app-root>
+
+</body>
+
+<!-- Menu Collapse Script -->
+<script>
+
+    // Insert your liquid data here. Remember to convert from JSON to JS Object (use https://json-to-js.com/ or similar)
+    // Set data object to null to skip Liquid processing. You probably want to do this if you're not using liquid as the
+    // processing can potentially interfere with scripts that run on page load.
+    var data = { sample: 'This is a string from the Liquid data object' };
+
+    // LIQUID PROCESSING (Set the data variable above)
+    function processLiquid() {
+        return new Promise((resolve, reject) => {
+            console.log('PROCESSING LIQUID')
+            // We rip the entire content of the inferno-snippet-content element. InnerHTML returns certain characters such as < and > escaped. 
+            // This breaks comparison operators, so we need to convert them back before Liquid processing.
+            const template = landingPageEl.querySelector('inferno-snippet-content').innerHTML.replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&');
+            // Select the element itself to replace the content
+            const result = landingPageEl.querySelector('inferno-snippet-content');
+            // Initialize the parsing engine
+            const engine = new liquidjs.Liquid();
+            // Parse and render
+            engine.parseAndRender(template, { data }).then(html => result.innerHTML = html)
+            resolve()
+        })
+
+    }
+
+    // Set the menu initial state here: 'expanded', 'collapsed', or 'hidden'.
+    function mtCollapseMenu() {
+        const appRoot = document.querySelector('app-root');
+        const sideBar = document.querySelector('videos-sidebar');
+        window.sessionStorage.setItem('menuState', 'collapsed');
+        appRoot.classList.add('aside-collapsed');
+        appRoot.classList.remove('aside-hidden');
+        sideBar.classList.remove('hidden');
+    }
+    function mtHideMenu() {
+        const appRoot = document.querySelector('app-root');
+        const sideBar = document.querySelector('videos-sidebar');
+        window.sessionStorage.setItem('menuState', 'hidden');
+        appRoot.classList.remove('aside-collapsed');
+        appRoot.classList.add('aside-hidden');
+        sideBar.classList.add('hidden');
+    }
+    function mtExpandMenu() {
+        const appRoot = document.querySelector('app-root');
+        const sideBar = document.querySelector('videos-sidebar');
+        window.sessionStorage.setItem('menuState', 'expanded');
+        appRoot.classList.remove('aside-hidden');
+        appRoot.classList.remove('aside-collapsed');
+        sideBar.classList.remove('hidden');
+    }
+
+    function mtTriggerMenu() {
+        const appRoot = document.querySelector('app-root');
+        const sideBar = document.querySelector('videos-sidebar');
+        if (!appRoot.classList.contains('aside-collapsed') && !appRoot.classList.contains('aside-hidden')) {
+            mtCollapseMenu();
+        } else if (appRoot.classList.contains('aside-collapsed') && !appRoot.classList.contains('aside-hidden')) {
+            mtHideMenu();
+        } else if (appRoot.classList.contains('aside-hidden')) {
+            mtExpandMenu();
+        }
+    }
+    function mtInitMenu() {
+        const appRoot = document.querySelector('app-root');
+        const sideBar = document.querySelector('videos-sidebar');
+        const state = sessionStorage.getItem('menuState');
+
+        if (state === 'collapsed') {
+            mtCollapseMenu();
+        } else if (state === 'hidden') {
+            mtHideMenu();
+        } else if (state === 'expanded') {
+            mtExpandMenu();
+        }
+    }
+
+    function populateInfernoElements() {
+        const qaDiv = landingPageEl.querySelector('#inferno-questions-basic');
+        const videoDiv = landingPageEl.querySelector('#inferno-video-player')
+        if (qaDiv) {
+            $(qaDiv).append(`<questions _nghost-qch-c20=""><!----><!----><div _ngcontent-qch-c20="" novalidate="" class="ng-untouched ng-pristine ng-valid ng-star-inserted"><div _ngcontent-qch-c20="" class="inferno-input-group"><span _ngcontent-qch-c20="" class="inferno-input-group-addon">Ask A Question</span><input _ngcontent-qch-c20="" class="inferno-form-control ng-untouched ng-pristine ng-valid" formcontrolname="question" type="text"><span _ngcontent-qch-c20="" class="inferno-input-group-btn"><button _ngcontent-qch-c20="" class="inferno-btn" type="button">Submit</button></span></div></div></questions>`)
+        }
+        if (videoDiv) {
+            $(videoDiv).append(`<iframe width="640" height="360" src="https://jolokia.inferno.jolokia.com/embed/ecd7f4ad-2c0a-4f3f-bfd6-37670cc2edbd" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>`)
+        }
+    }
+
+    // Wait for liquid processing before handling the rest
+    if (data) {
+        processLiquid().then(mtInitMenu).then(populateInfernoElements)
+    } else {
+        mtInitMenu();
+        populateInfernoElements();
+    }
+
+</script>
+
+</html>
